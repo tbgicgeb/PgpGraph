@@ -44,20 +44,20 @@ Keep all the required files in the same directory.
 
 """ Code to run the script """
 
-#### (1) For Inhibitors:
+##### (1) For Inhibitors:
 
-python3 /path/to/pgp_inhibitor_test.py --input_csv /path/to/inhibitor_examples.csv --model_weights /path/to/pgp_inhibitor_model_weights.pth --results_csv /path/to/inhibitors_results/inhibitor_example_results.csv --output_dir /path/to/inhibitors_results > ./output.log
+``` python3 /path/to/pgp_inhibitor_test.py --input_csv /path/to/inhibitor_examples.csv --model_weights /path/to/pgp_inhibitor_model_weights.pth --results_csv /path/to/inhibitors_results/inhibitor_example_results.csv --output_dir /path/to/inhibitors_results > ./output.log ```
 
-#### (2) For substrates:
+##### (2) For substrates:
 
-python3 /path/to/pgp_substrate_test.py --input_csv /path/to/substrate_examples.csv --model_weights /path/to/pgp_substrate_model_weights.pth --results_csv /path/to/substrates_results/substrate_example_results.csv --output_dir /path/to/substrates_results > ./output.log &
+``` python3 /path/to/pgp_substrate_test.py --input_csv /path/to/substrate_examples.csv --model_weights /path/to/pgp_substrate_model_weights.pth --results_csv /path/to/substrates_results/substrate_example_results.csv --output_dir /path/to/substrates_results > ./output.log & ```
 
 
-Caution
+#### Caution
 --------
 Input molecules must be in SMILES format in a .csv file. The progress of the code can be traced using the output.log file.
 
 
-Output
+#### Output
 -------
 The prediction results will be saved in 'inhibitor_example_results.csv' for inhibitors and 'substrate_example_results.csv' for substrates. The feature importance plots for inhibitors and substrates will be saved in inhibitors_barplots or substrates_barplots, respectively. 
