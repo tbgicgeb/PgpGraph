@@ -1,6 +1,6 @@
 # PgpGraph
 
-PgpGraph is based on Graph Convolution Networks that classifies P-glycoprotein's inhibitors vs. non-inhibitors and substartes vs. non.substrates.
+PgpGraph is based on Graph Convolution Networks, which classify P-glycoprotein inhibitors vs. non-inhibitors and substrates vs. non-substrates.
 
 ### Dependencies Required
 -----------------
