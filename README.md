@@ -40,8 +40,6 @@ PgpGraph leverages MolGraphConvFeaturizer from the DeepChem Package. To use PgpG
 
 (5) pgp_substrate_test.py (The script for Substrate Model)
 
-(6) inhibitors_example.csv or substrate_example.csv (Your input SMILES file)
-
 Keep all the required files in the same directory.
 
 #### Code to run the script:
@@ -57,9 +55,9 @@ Keep all the required files in the same directory.
 
 #### Caution
 --------
-Input molecules must be in SMILES format in a .csv file. The progress of the code can be traced using the output.log file.
+Input molecules must be in SMILES format in a .csv file. The progress of the code can be traced using the **output.log** file.
 
 
 #### Output
 -------
-The prediction results will be saved in 'inhibitor_example_results.csv' for inhibitors and 'substrate_example_results.csv' for substrates. The feature importance plots for inhibitors and substrates will be saved in inhibitors_barplots or substrates_barplots, respectively. 
+The prediction results will be saved in **inhibitor_example_results.csv** for inhibitors and **substrate_example_results.csv** for substrates. Within the substrate_results and inhibitors_results directories, the feature importance plots for inhibitors and substrates will be saved in inhibitors_barplots or substrates_barplots directories, respectively. 
