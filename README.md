@@ -26,24 +26,29 @@ torch_geometric: 2.5.0
 
 ### Commands to run PgpGraph
 ----------------------
-PgpGraph leverages MolGraphConvFeaturizer from DeepChem Package. To use PgpGraph, first download the required files:
+PgpGraph leverages MolGraphConvFeaturizer from the DeepChem Package. To use PgpGraph, first download the required files:
 
 (1) deepchem_utils.py (To get the features for your input SMILES)
+
 (2) pgp_inhibitor_model_weights.pth (Inhibitor Model)
+
 (3) pgp_substrate_model_weights.pth (Substrate Model)
+
 (4) pgp_inhibitors_test.py (The script for Inhibitor Model)
+
 (5) pgp_substrate_test.py (The script for Substrate Model)
+
 (6) inhibitors_example.csv or substrate_example.csv (Your input SMILES file)
 
 Keep all the required files in the same directory.
 
 """ Code to run the script """
 
-(1) For Inhibitors:
+#### (1) For Inhibitors:
 
 python3 /path/to/pgp_inhibitor_test.py --input_csv /path/to/inhibitor_examples.csv --model_weights /path/to/pgp_inhibitor_model_weights.pth --results_csv /path/to/inhibitors_results/inhibitor_example_results.csv --output_dir /path/to/inhibitors_results > ./output.log
 
-(2) For substrates:
+#### (2) For substrates:
 
 python3 /path/to/pgp_substrate_test.py --input_csv /path/to/substrate_examples.csv --model_weights /path/to/pgp_substrate_model_weights.pth --results_csv /path/to/substrates_results/substrate_example_results.csv --output_dir /path/to/substrates_results > ./output.log &
 
