@@ -42,7 +42,7 @@ PgpGraph leverages MolGraphConvFeaturizer from the DeepChem Package. To use PgpG
 
 Keep all the required files in the same directory.
 
-""" Code to run the script """
+#### Code to run the script:
 
 ##### (1) For Inhibitors:
 
