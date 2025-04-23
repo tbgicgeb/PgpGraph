@@ -5,6 +5,7 @@ PgpGraph is based on Graph Convolution Networks that classifies P-glycoprotein's
 ### Dependencies Required
 -----------------
 The repository has been tested on Ubuntu 22.04.5 LTS. Below is the list of packages required to run PgpGraph: 
+
 Numpy: 1.26.4
 
 Pandas: 1.5.3
