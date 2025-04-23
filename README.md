@@ -4,6 +4,7 @@ PgpGraph is based on Graph Convolution Networks, which classify P-glycoprotein i
 
 ![pgpgraph_main2(1)](https://github.com/user-attachments/assets/06a55935-c963-4369-ab10-8c96d6bfb27c)
 
+
 ### Dependencies Required
 -----------------
 The repository has been tested on Ubuntu 22.04.5 LTS. Below is the list of packages required to run PgpGraph: 
@@ -26,26 +27,28 @@ The repository has been tested on Ubuntu 22.04.5 LTS. Below is the list of packa
 
 ``` torch_geometric: 2.5.0 ```
 
-### Commands to run PgpGraph
+
+### Key Files
 ----------------------
 PgpGraph leverages MolGraphConvFeaturizer from the DeepChem Package. To use PgpGraph, first download the required files:
 
-(1) deepchem_utils.py (To get the features for your input SMILES)
+(1) **deepchem_utils.py** (To get the features for your input SMILES)
 
-(2) pgp_inhibitor_model_weights.pth (Inhibitor Model)
+(2) **pgp_inhibitor_model_weights.pth** (Inhibitor Model)
 
-(3) pgp_substrate_model_weights.pth (Substrate Model)
+(3) **pgp_substrate_model_weights.pth** (Substrate Model)
 
-(4) pgp_inhibitors_test.py (The script for Inhibitor Model)
+(4) **pgp_inhibitors_test.py** (The script for Inhibitor Model)
 
-(5) pgp_substrate_test.py (The script for Substrate Model)
+(5) **pgp_substrate_test.py** (The script for Substrate Model)
 
 Keep all the required files in the same directory.
 
-#### Code to run the script:
+
+### Code to run the script
+----------------------
 
 ##### (1) For Inhibitors:
-
 
    ```bash
    python3 /path/to/pgp_inhibitor_test.py --input_csv /path/to/inhibitor_examples.csv --model_weights /path/to/pgp_inhibitor_model_weights.pth --results_csv /path/to/inhibitors_results/inhibitor_example_results.csv --output_dir /path/to/inhibitors_results > ./output.log &
