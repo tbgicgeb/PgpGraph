@@ -2,6 +2,8 @@
 
 PgpGraph is based on Graph Convolution Networks, which classify P-glycoprotein inhibitors vs. non-inhibitors and substrates vs. non-substrates.
 
+![pgpgraph_main2(1)](https://github.com/user-attachments/assets/06a55935-c963-4369-ab10-8c96d6bfb27c)
+
 ### Dependencies Required
 -----------------
 The repository has been tested on Ubuntu 22.04.5 LTS. Below is the list of packages required to run PgpGraph: 
