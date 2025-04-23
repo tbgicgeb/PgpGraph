@@ -46,7 +46,7 @@ Keep all the required files in the same directory.
 
 ##### (1) For Inhibitors:
 
-``` python3 /path/to/pgp_inhibitor_test.py --input_csv /path/to/inhibitor_examples.csv --model_weights /path/to/pgp_inhibitor_model_weights.pth --results_csv /path/to/inhibitors_results/inhibitor_example_results.csv --output_dir /path/to/inhibitors_results > ./output.log ```
+``` python3 /path/to/pgp_inhibitor_test.py --input_csv /path/to/inhibitor_examples.csv --model_weights /path/to/pgp_inhibitor_model_weights.pth --results_csv /path/to/inhibitors_results/inhibitor_example_results.csv --output_dir /path/to/inhibitors_results > ./output.log & ```
 
 ##### (2) For Substrates:
 
